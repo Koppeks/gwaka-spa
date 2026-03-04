@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="flex flex-col lg:flex-row items-center justify-between w-full h-[94dvh] relative px-6 md:px-20 py-12 md:py-0 gap-8"
+      className="flex flex-col lg:flex-row items-center justify-between w-full min-h-screen relative px-6 md:px-20 py-12 md:py-0 gap-8"
     >
       <section className="relative overflow-hidden flex flex-col items-center px-6 py-10 sm:px-10 sm:py-14">
         <Badge>Open Source Wakatime Browser Extension</Badge>
@@ -33,9 +33,7 @@ export default function Hero() {
           </Button>
         </div>
       </section>
-
       <img className='w-100' src={"/small_demo_extension.gif"} alt="Loading..." />
-
     </div>
   )
 }
