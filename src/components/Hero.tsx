@@ -23,7 +23,7 @@ export default function Hero() {
           WakaTime dashboard instantly.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          <Button href="#" variant="default">
+          <Button target="_blank" href="https://chromewebstore.google.com/detail/gmpiofbkheibmaofamolbnahecgafkje?utm_source=item-share-cb" variant="default">
             <SiGooglechrome className="size-4" />
             Get this extension
           </Button>

@@ -42,17 +42,21 @@ function Button({
   variant,
   size,
   href,
+  target,
   style,
   ...props
 }: React.ComponentProps<'button'> &
   VariantProps<typeof buttonVariants> & {
-    href?: string
+    href?: string,
+    target?: string,
   }) {
   const Comp = href ? 'a' : 'button'
 
   return (
     <Comp
       href={href}
+      target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       style={{ color: 'inherit', ...style }}
