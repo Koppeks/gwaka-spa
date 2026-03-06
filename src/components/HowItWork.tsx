@@ -72,17 +72,7 @@ export function HowItWorks() {
                   <p className="mb-2 font-mono text-sm text-[var(--lagoon-deep)]">
                     {'// Video placeholder'}
                   </p>
-                  <p className="text-sm text-[var(--sea-ink)] opacity-55">
-                    Replace this with your demo video URL using an{' '}
-                    <code className="rounded bg-[var(--sand)] px-1.5 py-0.5 font-mono text-xs text-[var(--sea-ink)]">
-                      {'<iframe>'}
-                    </code>{' '}
-                    or{' '}
-                    <code className="rounded bg-[var(--sand)] px-1.5 py-0.5 font-mono text-xs text-[var(--sea-ink)]">
-                      {'<video>'}
-                    </code>{' '}
-                    element
-                  </p>
+                  <video autoPlay src="WGAS_walkthrough.mp4" controls />
                   <button
                     onClick={() => setPlaying(false)}
                     className="mt-4 text-xs text-[var(--lagoon-deep)] underline underline-offset-4 hover:opacity-70"
