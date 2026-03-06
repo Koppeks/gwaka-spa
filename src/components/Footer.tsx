@@ -1,5 +1,6 @@
 import { Clock } from 'lucide-react'
 import {
+  SiBuymeacoffee,
   SiGithub,
   SiGoogleappsscript,
   SiWakatime,
@@ -8,7 +9,7 @@ import {
 export function Footer() {
   return (
     <footer className="border-t border-[var(--chip-line)] px-6 py-12">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 md:flex-row md:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 lg:flex-row md:justify-between">
         <div className="flex flex-col items-center gap-3 md:items-start">
           <a
             href="#"
@@ -70,6 +71,15 @@ export function Footer() {
             >
               <SiGithub className="h-3.5 w-3.5" />
               GitHub
+            </a>
+            <a
+              href={`https://www.buymeacoffee.com/koppeks`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs text-[var(--sea-ink)] opacity-50 hover:opacity-100 transition-opacity no-underline hover:no-underline"
+            >
+              <SiBuymeacoffee className="h-3.5 w-3.5" />
+              Buy Me a Coffee
             </a>
           </div>
           <p className="text-xs text-[var(--sea-ink)] opacity-35">

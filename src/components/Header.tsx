@@ -88,7 +88,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            API Docs
+            Wakatime Docs
           </a>
         </div>
 
