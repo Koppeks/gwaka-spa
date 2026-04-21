@@ -55,7 +55,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--header-bg)] px-4 backdrop-blur-lg">
+    <header className="sticky top-0 z-50 border-b border-(--line) bg-(--header-bg) px-4 backdrop-blur-lg">
       <nav className="page-wrap flex items-center justify-between py-3 sm:py-4">
         <div className="flex items-center gap-x-2 shrink-0">
           <img
@@ -69,7 +69,7 @@ export default function Header() {
           <Pulse />
         </div>
 
-        <div className="hidden md:flex items-center gap-x-4 text-sm font-semibold absolute left-1/2 -translate-x-1/2">
+        <div className="hidden lg:flex items-center gap-x-4 text-sm font-semibold absolute left-1/2 -translate-x-1/2">
           {NAV_LINKS.filter((l) => l.sectionId).map((link) => (
             <a
               key={link.sectionId}
@@ -97,22 +97,22 @@ export default function Header() {
             href="https://wakatime.com/dashboard"
             target="_blank"
             rel="noreferrer"
-            className="hidden md:block rounded-xl p-2 text-[var(--sea-ink-soft)] transition hover:bg-[var(--link-bg-hover)] hover:text-[var(--sea-ink)]"
+            className="hidden lg:block rounded-xl p-2 text-(--sea-ink-soft) transition hover:bg-(--link-bg-hover) hover:text-(--sea-ink)"
           >
             <SiWakatime size={20} />
           </a>
           <a
-            href="https://github.com/Koppeks/wakatime-gas"
+            href="https://github.com/Koppeks/gwaka"
             target="_blank"
             rel="noreferrer"
-            className="hidden md:block rounded-xl p-2 text-[var(--sea-ink-soft)] transition hover:bg-[var(--link-bg-hover)] hover:text-[var(--sea-ink)]"
+            className="hidden lg:block rounded-xl p-2 text-(--sea-ink-soft) transition hover:bg-(--link-bg-hover) hover:text-(--sea-ink)"
           >
             <SiGithub size={20} />
           </a>
           <ThemeToggle />
           <button
             type="button"
-            className="md:hidden rounded-xl p-2 text-[var(--sea-ink-soft)] transition hover:bg-[var(--link-bg-hover)] hover:text-[var(--sea-ink)]"
+            className="lg:hidden rounded-xl p-2 text-(--sea-ink-soft) transition hover:bg-(--link-bg-hover) hover:text-(--sea-ink)"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-label="Toggle menu"
           >
@@ -121,7 +121,7 @@ export default function Header() {
         </div>
       </nav>
       {mobileOpen && (
-        <div className="md:hidden border-t border-[var(--line)] py-3 flex flex-col gap-1 text-sm font-semibold">
+        <div className="lg:hidden border-t border-(--line) py-3 flex flex-col gap-1 text-sm font-semibold">
           {NAV_LINKS.filter((l) => l.sectionId).map((link) => (
             <a
               key={link.sectionId}
@@ -146,7 +146,7 @@ export default function Header() {
             rel="noreferrer"
             onClick={() => setMobileOpen(false)}
           >
-            API Docs
+            Wakatime Docs
           </a>
 
           <section className="flex flex-row gap-2 mt-2">
@@ -154,15 +154,15 @@ export default function Header() {
               href="https://wakatime.com/dashboard"
               target="_blank"
               rel="noreferrer"
-              className="md:block rounded-xl p-2 text-[var(--sea-ink-soft)] transition hover:bg-[var(--link-bg-hover)] hover:text-[var(--sea-ink)]"
+              className="md:block rounded-xl p-2 text-(--sea-ink-soft) transition hover:bg-(--link-bg-hover) hover:text-(--sea-ink)"
             >
               <SiWakatime size={20} />
             </a>
             <a
-              href="https://github.com/Koppeks/wakatime-gas"
+              href="https://github.com/Koppeks/gwaka"
               target="_blank"
               rel="noreferrer"
-              className="md:block rounded-xl p-2 text-[var(--sea-ink-soft)] transition hover:bg-[var(--link-bg-hover)] hover:text-[var(--sea-ink)]"
+              className="md:block rounded-xl p-2 text-(--sea-ink-soft) transition hover:bg-(--link-bg-hover) hover:text-(--sea-ink)"
             >
               <SiGithub size={20} />
             </a>

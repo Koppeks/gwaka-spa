@@ -36,4 +36,4 @@ pnpm dev
 
 ### 📂 Related Repositories
 
-Check out the [Wakatime For Apps Script](https://github.com/Koppeks/wakatime-gas) - The core logic for the browser extension.
+Check out the [Wakatime For Apps Script](https://github.com/Koppeks/gwaka) - The core logic for the browser extension.

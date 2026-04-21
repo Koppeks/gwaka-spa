@@ -46,10 +46,10 @@ export function Features() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <Badge>Features</Badge>
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-(--sea-ink) sm:text-4xl">
             Everything you need to track your Google Workspace time
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-pretty text-[var(--sea-ink-soft)] opacity-60">
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-(--sea-ink-soft) opacity-60">
             A seamless integration that brings WakaTime time-tracking to the
             entire Google Workspace suite.
           </p>
@@ -59,15 +59,15 @@ export function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] backdrop-blur-sm p-6 transition-all hover:border-[var(--lagoon)]/40 hover:bg-[var(--surface-strong)] hover:shadow-[0_4px_20px_var(--hero-a)]"
+              className="group rounded-xl border border-(--chip-line) bg-(--chip-bg) backdrop-blur-sm p-6 transition-all hover:border-(--lagoon)/40 hover:bg-(--surface-strong) hover:shadow-[0_4px_20px_var(--hero-a)]"
             >
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--hero-a)] text-[var(--lagoon-deep)] transition-colors group-hover:bg-[var(--lagoon)]/25">
+              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-(--hero-a) text-(--lagoon-deep) transition-colors group-hover:bg-(--lagoon)/25">
                 <feature.icon className="h-5 w-5" />
               </div>
-              <h3 className="mb-2 text-base font-semibold text-[var(--sea-ink)]">
+              <h3 className="mb-2 text-base font-semibold text-(--sea-ink)">
                 {feature.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[var(--sea-ink)] opacity-55">
+              <p className="text-sm leading-relaxed text-(--sea-ink) opacity-55">
                 {feature.description}
               </p>
             </div>

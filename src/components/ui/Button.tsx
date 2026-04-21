@@ -47,8 +47,8 @@ function Button({
   ...props
 }: React.ComponentProps<'button'> &
   VariantProps<typeof buttonVariants> & {
-    href?: string,
-    target?: string,
+    href?: string
+    target?: string
   }) {
   const Comp = href ? 'a' : 'button'
 

@@ -4,13 +4,13 @@ export const Route = createFileRoute('/privacy_policy')({
   component: RouteComponent,
 })
 
-const LAST_UPDATED = 'March 2026'
+const LAST_UPDATED = 'April 2026'
 const CONTACT_EMAIL = 'https://github.com/Koppeks'
 
 const sections = [
   {
     title: 'Overview',
-    content: `Gwaka is an unofficial browser extension that tracks your coding and writing time across Google Workspace editors — including Docs, Sheets, Slides, Apps Script, and more — and sends activity data to your personal WakaTime account. This policy explains what data we access, how it is used, and what we never do with it`,
+    content: `Gwaka (formerly “WakaTime for Google Apps Script”) is an unofficial browser extension that tracks your coding and writing time across Google Workspace editors — including Docs, Sheets, Slides, Apps Script, and more — and sends activity data to your personal WakaTime account. This policy explains what data we access, how it is used, and what we never do with it`,
   },
   {
     title: 'Data We Collect',
@@ -33,7 +33,7 @@ const sections = [
       {
         label: 'Project and File Name',
         description:
-          'The extension reads the current project name from the page title and the active file name from the editor\'s file tree. This information is included in the heartbeat payload sent to wakatime.com so your time is attributed correctly.',
+          "The extension reads the current project name from the page title and the active file name from the editor's file tree. This information is included in the heartbeat payload sent to wakatime.com so your time is attributed correctly.",
       },
     ],
   },
@@ -66,34 +66,33 @@ const sections = [
 
 function RouteComponent() {
   return (
-    <main className="min-h-screen bg-[var(--bg-base)] px-4 py-16 text-[var(--sea-ink)]">
+    <main className="min-h-screen bg-(--bg-base) px-4 py-16 text-(--sea-ink)">
       <div className="mx-auto max-w-2xl">
-
         {/* Header */}
         <div className="mb-12">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[var(--sea-ink-soft)]">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-(--sea-ink-soft)">
             Legal
           </p>
-          <h1 className="text-3xl font-bold tracking-tight text-[var(--sea-ink)]">
+          <h1 className="text-3xl font-bold tracking-tight text-(--sea-ink)">
             Privacy Policy
           </h1>
-          <p className="mt-2 text-sm text-[var(--sea-ink-soft)]">
+          <p className="mt-2 text-sm text-(--sea-ink-soft)">
             Last updated: {LAST_UPDATED}
           </p>
-          <div className="mt-4 h-px w-full bg-[var(--line)]" />
+          <div className="mt-4 h-px w-full bg-(--line)" />
         </div>
 
         {/* Sections */}
         <div className="space-y-10">
           {sections.map((section) => (
             <section key={section.title}>
-              <h2 className="mb-3 text-base font-semibold text-[var(--sea-ink)]">
+              <h2 className="mb-3 text-base font-semibold text-(--sea-ink)">
                 {section.title}
               </h2>
 
               {/* Plain paragraph */}
               {section.content && (
-                <p className="text-sm leading-relaxed text-[var(--sea-ink-soft)]">
+                <p className="text-sm leading-relaxed text-(--sea-ink-soft)">
                   {section.content}
                 </p>
               )}
@@ -104,12 +103,12 @@ function RouteComponent() {
                   {section.items.map((item) => (
                     <div
                       key={item.label}
-                      className="rounded-xl border border-[var(--line)] bg-[var(--foam)] px-4 py-3"
+                      className="rounded-xl border border-(--line) bg-(--foam) px-4 py-3"
                     >
-                      <p className="mb-1 text-xs font-semibold text-[var(--sea-ink)]">
+                      <p className="mb-1 text-xs font-semibold text-(--sea-ink)">
                         {item.label}
                       </p>
-                      <p className="text-xs leading-relaxed text-[var(--sea-ink-soft)]">
+                      <p className="text-xs leading-relaxed text-(--sea-ink-soft)">
                         {item.description}
                       </p>
                     </div>
@@ -123,9 +122,9 @@ function RouteComponent() {
                   {section.bullets.map((bullet) => (
                     <li
                       key={bullet}
-                      className="flex items-start gap-2 text-sm text-[var(--sea-ink-soft)]"
+                      className="flex items-start gap-2 text-sm text-(--sea-ink-soft)"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--sea-ink-soft)]" />
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-(--sea-ink-soft)" />
                       {bullet}
                     </li>
                   ))}
@@ -136,12 +135,11 @@ function RouteComponent() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-16 border-t border-[var(--line)] pt-6 text-center">
-          <p className="text-xs text-[var(--sea-ink-soft)]">
+        <div className="mt-16 border-t border-(--line) pt-6 text-center">
+          <p className="text-xs text-(--sea-ink-soft)">
             Gwaka is not affiliated with WakaTime Inc. or Google.
           </p>
         </div>
-
       </div>
     </main>
   )

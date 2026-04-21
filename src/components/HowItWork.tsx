@@ -12,12 +12,12 @@ export function HowItWorks() {
       <div className="mx-auto max-w-4xl">
         <div className="mb-16 text-center">
           <Badge>How It Works</Badge>
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-(--sea-ink) sm:text-4xl">
             Up and running in under a minute
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-pretty text-[var(--sea-ink)] opacity-55">
-            Three simple steps to start tracking your Google Workspace activity on
-            WakaTime.
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-(--sea-ink) opacity-55">
+            Three simple steps to start tracking your Google Workspace activity
+            on WakaTime.
           </p>
         </div>
         <div className="mb-14 grid gap-8 sm:grid-cols-3">
@@ -39,43 +39,43 @@ export function HowItWorks() {
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
-              <span className="mb-3 inline-block font-mono text-3xl font-bold text-[var(--lagoon-deep)]">
+              <span className="mb-3 inline-block font-mono text-3xl font-bold text-(--lagoon-deep)">
                 {item.step}
               </span>
-              <h3 className="mb-2 text-base font-semibold text-[var(--sea-ink)]">
+              <h3 className="mb-2 text-base font-semibold text-(--sea-ink)">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[var(--sea-ink)] opacity-55">
+              <p className="text-sm leading-relaxed text-(--sea-ink) opacity-55">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
-        <div className="relative overflow-hidden rounded-xl border border-[var(--chip-line)] bg-[var(--chip-bg)] backdrop-blur-sm">
+        <div className="relative overflow-hidden rounded-xl border border-(--chip-line) bg-(--chip-bg) backdrop-blur-sm">
           <div className="aspect-video w-full">
             {!playing ? (
               <button
                 onClick={() => setPlaying(true)}
-                className="group flex h-full w-full flex-col items-center justify-center gap-4 bg-[var(--hero-a)] transition-all hover:bg-[var(--lagoon)]/20"
+                className="group flex h-full w-full flex-col items-center justify-center gap-4 bg-(--hero-a) transition-all hover:bg-(--lagoon)/20"
                 aria-label="Play demo video"
               >
-                <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-[var(--lagoon)] bg-[var(--hero-a)] text-[var(--lagoon-deep)] transition-transform group-hover:scale-110">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-(--lagoon) bg-(--hero-a) text-(--lagoon-deep) transition-transform group-hover:scale-110">
                   <Play className="ml-1 h-7 w-7" />
                 </div>
-                <span className="text-sm font-medium text-[var(--sea-ink)] opacity-55">
+                <span className="text-sm font-medium text-(--sea-ink) opacity-55">
                   Watch the demo
                 </span>
               </button>
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-[var(--hero-a)]">
+              <div className="flex h-full w-full items-center justify-center bg-(--hero-a)">
                 <div className="text-center">
-                  <p className="mb-2 font-mono text-sm text-[var(--lagoon-deep)]">
+                  <p className="mb-2 font-mono text-sm text-(--lagoon-deep)">
                     {'// Video placeholder'}
                   </p>
                   <video autoPlay src="WGAS_walkthrough.mp4" controls />
                   <button
                     onClick={() => setPlaying(false)}
-                    className="mt-4 text-xs text-[var(--lagoon-deep)] underline underline-offset-4 hover:opacity-70"
+                    className="mt-4 text-xs text-(--lagoon-deep) underline underline-offset-4 hover:opacity-70"
                   >
                     Reset
                   </button>
