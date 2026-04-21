@@ -22,18 +22,6 @@ Styling: Tailwind CSS v4
 
 Package Manager: pnpm
 
-### 🛠 Setup & Development
-
-To run this website locally:
-
-```bash
-git clone https://github.com/Koppeks/wakatime-gas-spa.git
-
-pnpm install
-
-pnpm dev
-```
-
 ### 📂 Related Repositories
 
 Check out [Gwaka](https://github.com/Koppeks/gwaka) - The Chrome extension that tracks time across Google Workspace (Docs, Sheets, Slides, Forms, Drive, Colab, Sites, Apps Script).
