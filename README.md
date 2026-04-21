@@ -1,24 +1,24 @@
-## Wakatime For Apps Script SPA - Showcase Extension
+## Gwaka SPA - Showcase Extension
 
 ![alt text](/public/SPA_hero.png)
 
-[Live Site](https://wakatime-for-apps-script.vercel.app/) - The official landing page for the **Wakatime for Apps Script** unofficial browser extension.
+[Live Site](https://gwaka.vercel.app/) - The official landing page for **Gwaka**, an unofficial Chrome extension that tracks time in Google Workspace and reports it to WakaTime.
 
 ### 🎯 Purpose
 
-This SPA serves as the primary marketing and documentation hub for the **Wakatime for Apps Script**. It allows potential users to:
+This SPA serves as the primary marketing and documentation hub for Gwaka. It allows potential users to:
 
 View live screenshots and feature breakdowns.
 
-Access installation guides for different browsers.
+Access installation guides for Chrome.
 
-Review the privacy policy and terms of service.
+Review the privacy policy and changelog.
 
 ### 💻 Tech Stack
 
-Framework: Vite + Tanstack
+Framework: TanStack Start (React 19)
 
-Styling: Tailwind CSS
+Styling: Tailwind CSS v4
 
 Package Manager: pnpm
 
@@ -27,7 +27,7 @@ Package Manager: pnpm
 To run this website locally:
 
 ```bash
-git clone ...
+git clone https://github.com/Koppeks/wakatime-gas-spa.git
 
 pnpm install
 
@@ -36,4 +36,4 @@ pnpm dev
 
 ### 📂 Related Repositories
 
-Check out the [Wakatime For Apps Script](https://github.com/Koppeks/gwaka) - The core logic for the browser extension.
+Check out [Gwaka](https://github.com/Koppeks/gwaka) - The Chrome extension that tracks time across Google Workspace (Docs, Sheets, Slides, Forms, Drive, Colab, Sites, Apps Script).
