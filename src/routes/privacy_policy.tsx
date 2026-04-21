@@ -10,7 +10,7 @@ const CONTACT_EMAIL = 'https://github.com/Koppeks'
 const sections = [
   {
     title: 'Overview',
-    content: `WakaTime for Google Apps Script is an unofficial browser extension that tracks your coding time inside the Google Apps Script editor and sends activity data to your personal WakaTime account. This policy explains what data we access, how it is used, and what we never do with it`,
+    content: `Gwaka is an unofficial browser extension that tracks your coding and writing time across Google Workspace editors — including Docs, Sheets, Slides, Apps Script, and more — and sends activity data to your personal WakaTime account. This policy explains what data we access, how it is used, and what we never do with it`,
   },
   {
     title: 'Data We Collect',
@@ -28,7 +28,7 @@ const sections = [
       {
         label: 'Keyboard Activity',
         description:
-          'The extension listens for keydown events inside script.google.com to detect coding activity and decide when to send a heartbeat. Individual keystrokes are never recorded, stored, logged, or transmitted. Only the occurrence of activity is used.',
+          'The extension listens for keydown events inside Google Workspace editors to detect coding and writing activity and decide when to send a heartbeat. Individual keystrokes are never recorded, stored, logged, or transmitted. Only the occurrence of activity is used.',
       },
       {
         label: 'Project and File Name',
@@ -41,7 +41,7 @@ const sections = [
     title: 'Data We Do Not Collect',
     bullets: [
       'Personal information such as your name, email address, or location',
-      'Browser history or activity outside of script.google.com',
+      'Browser history or activity outside of Google Workspace editors',
       'The content of your code or scripts',
       'Any data unrelated to WakaTime time tracking',
     ],
@@ -138,7 +138,7 @@ function RouteComponent() {
         {/* Footer note */}
         <div className="mt-16 border-t border-[var(--line)] pt-6 text-center">
           <p className="text-xs text-[var(--sea-ink-soft)]">
-            This extension is not affiliated with WakaTime Inc.
+            Gwaka is not affiliated with WakaTime Inc. or Google.
           </p>
         </div>
 

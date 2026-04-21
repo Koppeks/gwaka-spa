@@ -18,26 +18,26 @@ export const Route = createRootRoute({
       },
       {
         title:
-          'Wakatime For Google Apps Script - Unofficial Wakatime integration for GAS projects',
+          'Gwaka - WakaTime tracking for Google Workspace',
       },
       {
         name: 'description',
         content:
-          'Track coding time in Google Apps Script projects with Wakatime. An unofficial browser extension that brings automatic time tracking to the Apps Script IDE.',
+          'Track coding and writing time across Google Workspace with Gwaka. An unofficial browser extension that brings automatic WakaTime tracking to Docs, Sheets, Slides, Apps Script, and more.',
       },
       {
         name: 'keywords',
         content:
-          'Wakatime, Google Apps Script, GAS, time tracking, coding stats, browser extension',
+          'Gwaka, WakaTime, Google Workspace, Google Docs, Google Sheets, Apps Script, time tracking, coding stats, browser extension',
       },
       {
         property: 'og:title',
-        content: 'Wakatime for Google Apps Script',
+        content: 'Gwaka — WakaTime for Google Workspace',
       },
       {
         property: 'og:description',
         content:
-          'Track coding time in Google Apps Script projects with Wakatime. An unofficial browser extension that brings automatic time tracking to the Apps Script IDE.',
+          'Track coding and writing time across Google Workspace with Gwaka. An unofficial browser extension that brings automatic WakaTime tracking to Docs, Sheets, Slides, Apps Script, and more.',
       },
     ],
     links: [

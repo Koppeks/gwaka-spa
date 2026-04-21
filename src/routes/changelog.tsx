@@ -118,7 +118,7 @@ function Changelog() {
             What&apos;s new
           </h1>
           <p className="mx-auto mt-4 max-w-lg text-pretty text-[var(--sea-ink-soft)] opacity-60">
-            Release history and improvements for WakaTime for Apps Script.
+            Release history and improvements for Gwaka.
           </p>
         </div>
 

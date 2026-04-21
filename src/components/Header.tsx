@@ -60,15 +60,11 @@ export default function Header() {
         <div className="flex items-center gap-x-2 shrink-0">
           <img
             src="/WakatimeIcon.svg"
-            alt="WakaScript Logo"
+            alt="Gwaka Logo"
             className="h-4 w-auto"
           />
-          <span className="font-semibold tracking-tight text-[var(--sea-ink)]">
-            Wakatime
-          </span>
-          <span className="text-[var(--sea-ink-soft)]">for</span>
           <span className="font-semibold italic tracking-tight text-cycle">
-            Apps Script
+            Gwaka
           </span>
           <Pulse />
         </div>
@@ -92,7 +88,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            Wakatime Docs
+            WakaTime Docs
           </a>
         </div>
 

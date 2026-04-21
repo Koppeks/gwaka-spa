@@ -20,12 +20,12 @@ export function Footer() {
               <Clock className="h-7 w-7 text-[var(--lagoon-deep)]" />
             </div>
             <span className="text-sm font-semibold text-[var(--sea-ink)]">
-              WakaTime for Apps Script
+              Gwaka
             </span>
           </a>
           <p className="max-w-sm text-center text-xs leading-relaxed text-[var(--sea-ink)] opacity-50 md:text-left">
             An open-source browser extension that sends coding heartbeats from
-            the Google Apps Script editor to your WakaTime dashboard.
+            Google Workspace editors to your WakaTime dashboard.
           </p>
         </div>
         <div>
@@ -53,13 +53,13 @@ export function Footer() {
         <div className="flex flex-col items-center gap-4 md:items-end">
           <div className="flex items-center gap-6">
             <a
-              href="https://script.google.com"
+              href="https://workspace.google.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-xs text-[var(--sea-ink)] opacity-50 hover:opacity-100 transition-opacity no-underline hover:no-underline"
             >
               <SiGoogleappsscript className="h-3.5 w-3.5" />
-              Apps Script
+              Google Workspace
             </a>
             <a
               href="https://wakatime.com"

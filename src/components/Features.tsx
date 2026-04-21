@@ -6,7 +6,7 @@ const features = [
     icon: Activity,
     title: 'Automatic Heartbeats',
     description:
-      'Every keystroke and file change in the Apps Script editor is automatically tracked and sent as a heartbeat to WakaTime.',
+      'Every keystroke and file change across Google Workspace editors is automatically tracked and sent as a heartbeat to WakaTime.',
   },
   {
     icon: Key,
@@ -18,19 +18,19 @@ const features = [
     icon: Monitor,
     title: 'Custom Machine Name',
     description:
-      'Set a custom machine name to distinguish your Apps Script activity from other editors on your WakaTime dashboard.',
+      'Set a custom machine name to distinguish your Google Workspace activity from other editors on your WakaTime dashboard.',
   },
   {
     icon: Zap,
-    title: 'Lightweight & Fast',
+    title: 'Full Google Workspace Coverage',
     description:
-      'Minimal footprint browser extension that runs silently in the background without affecting your editor performance.',
+      'Tracks activity in Docs, Sheets, Slides, Apps Script, Forms, and more — all Google Workspace editors in one extension.',
   },
   {
     icon: BarChart3,
     title: 'WakaTime Dashboard',
     description:
-      'All your Apps Script coding time appears on your existing WakaTime dashboard alongside data from other editors.',
+      'All your Google Workspace coding and writing time appears on your existing WakaTime dashboard alongside data from other editors.',
   },
   {
     icon: Shield,
@@ -47,11 +47,11 @@ export function Features() {
         <div className="mb-16 text-center">
           <Badge>Features</Badge>
           <h2 className="text-balance text-3xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-4xl">
-            Everything you need to track your Apps Script time
+            Everything you need to track your Google Workspace time
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-[var(--sea-ink-soft)] opacity-60">
-            A seamless integration that brings the power of WakaTime
-            time-tracking to the Google Apps Script editor.
+            A seamless integration that brings WakaTime time-tracking to the
+            entire Google Workspace suite.
           </p>
         </div>
 

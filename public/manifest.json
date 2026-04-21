@@ -1,6 +1,6 @@
 {
-  "short_name": "Waka Apps Script",
-  "name": "Wakatime for Apps Script Extension",
+  "short_name": "Gwaka",
+  "name": "Gwaka - WakaTime for Google Workspace",
   "icons": [
     {
       "src": "favicon.ico",

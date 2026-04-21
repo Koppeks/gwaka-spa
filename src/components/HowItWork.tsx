@@ -16,7 +16,7 @@ export function HowItWorks() {
             Up and running in under a minute
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-[var(--sea-ink)] opacity-55">
-            Three simple steps to start tracking your Apps Script coding time on
+            Three simple steps to start tracking your Google Workspace activity on
             WakaTime.
           </p>
         </div>
@@ -35,7 +35,7 @@ export function HowItWorks() {
             {
               step: '03',
               title: 'Start coding',
-              desc: 'Open the Apps Script editor and code as usual. Heartbeats are sent automatically.',
+              desc: 'Open any Google Workspace editor and work as usual. Heartbeats are sent automatically.',
             },
           ].map((item) => (
             <div key={item.step} className="text-center">
