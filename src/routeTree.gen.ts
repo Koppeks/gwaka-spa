@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as Privacy_policyRouteImport } from './routes/privacy_policy'
+import { Route as ChangelogRouteImport } from './routes/changelog'
 import { Route as IndexRouteImport } from './routes/index'
 
 const Privacy_policyRoute = Privacy_policyRouteImport.update({
   id: '/privacy_policy',
   path: '/privacy_policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ChangelogRoute = ChangelogRouteImport.update({
+  id: '/changelog',
+  path: '/changelog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/changelog': typeof ChangelogRoute
   '/privacy_policy': typeof Privacy_policyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/changelog': typeof ChangelogRoute
   '/privacy_policy': typeof Privacy_policyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/changelog': typeof ChangelogRoute
   '/privacy_policy': typeof Privacy_policyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/privacy_policy'
+  fullPaths: '/' | '/changelog' | '/privacy_policy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/privacy_policy'
-  id: '__root__' | '/' | '/privacy_policy'
+  to: '/' | '/changelog' | '/privacy_policy'
+  id: '__root__' | '/' | '/changelog' | '/privacy_policy'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ChangelogRoute: typeof ChangelogRoute
   Privacy_policyRoute: typeof Privacy_policyRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy_policy'
       fullPath: '/privacy_policy'
       preLoaderRoute: typeof Privacy_policyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/changelog': {
+      id: '/changelog'
+      path: '/changelog'
+      fullPath: '/changelog'
+      preLoaderRoute: typeof ChangelogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ChangelogRoute: ChangelogRoute,
   Privacy_policyRoute: Privacy_policyRoute,
 }
 export const routeTree = rootRouteImport

@@ -3,6 +3,7 @@ import ThemeToggle from './ThemeToggle'
 import Pulse from './ui/Pulse'
 import { useState, useEffect } from 'react'
 import { SiGithub, SiWakatime } from '@icons-pack/react-simple-icons'
+import { Link } from '@tanstack/react-router'
 
 const NAV_LINKS = [
   { label: 'Home', href: '/#hero', sectionId: 'hero' },
@@ -82,6 +83,9 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <Link to="/changelog" className="nav-link">
+            Changelog
+          </Link>
           <a
             href="https://wakatime.com/api"
             className="nav-link"
@@ -132,6 +136,13 @@ export default function Header() {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/changelog"
+            className="nav-link px-1 py-2"
+            onClick={() => setMobileOpen(false)}
+          >
+            Changelog
+          </Link>
           <a
             href="https://wakatime.com/api"
             className="nav-link px-1 py-2"
