@@ -1,7 +1,7 @@
 import Badge from './ui/Badge'
 import { Button } from './ui/Button'
-import { SiGooglechrome } from '@icons-pack/react-simple-icons'
-import { ArrowDown } from 'lucide-react'
+import { SiGithub, SiGooglechrome } from '@icons-pack/react-simple-icons'
+import { ArrowDown, Star, Users } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -26,12 +26,36 @@ export default function Hero() {
             variant="default"
           >
             <SiGooglechrome className="size-4" />
-            Get this extension
+            Chrome Web Store
           </Button>
           <Button href="/#how-it-works" variant="secondaryglow">
-            See how it works
             <ArrowDown className="size-4" />
+            See how it works
           </Button>
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-(--sea-ink)">
+          <span className="flex items-center gap-2 opacity-60">
+            <Users className="size-3.5 shrink-0" />
+            14 users
+          </span>
+          <span className="hidden h-4 w-px bg-(--chip-line) sm:block" />
+          <span className="flex items-center gap-1.5">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Star key={i} className="size-3.5 fill-(--lagoon) text-(--lagoon)" />
+            ))}
+            <span className="ml-1 opacity-60">5.0</span>
+          </span>
+          <span className="hidden h-4 w-px bg-(--chip-line) sm:block" />
+          <a
+            href="https://github.com/Koppeks/gwaka"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 opacity-60 hover:opacity-100 transition-opacity no-underline"
+          >
+            <SiGithub className="size-3.5 shrink-0" />
+            4 stars on GitHub
+          </a>
         </div>
       </section>
       <img className="w-100" src={'/gwaka.gif'} alt="Loading..." />
