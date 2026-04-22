@@ -35,7 +35,7 @@ export function Support() {
           <Button
             className="flex flex-row items-center gap-4"
             variant="secondaryglow"
-            href="https://github.com/Koppeks/gwaka"
+            href="https://github.com/Koppeks/gwaka/issues"
           >
             <SiGithub className="size-4" />
             Contribute
